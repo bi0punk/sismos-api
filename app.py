@@ -6,7 +6,7 @@ import requests
 
 app = Flask(__name__)
 
-@app.route("/", methods = ['GET', 'POST'])
+@app.route("/")
 def hello_world():
     table_MN = pd.read_html('https://www.sismologia.cl/sismicidad/catalogo/2022/11/20221107.html')
     print(f'Total tables: {len(table_MN)}')
